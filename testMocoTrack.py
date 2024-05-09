@@ -68,7 +68,7 @@ def muscleDrivenStateTracking():
     # A TableProcessor with no operators, as we have here, simply returns the
     # base table.
     # track.setStatesReference(osim.TableProcessor("coordinates.sto"))
-    marker_file = "motion_2_modified.trc"
+    marker_file = "motion_3_modified.trc"
 
     track.setMarkersReferenceFromTRC(marker_file)
 
@@ -101,7 +101,7 @@ def muscleDrivenStateTracking():
 
     # Initial time, final time, and mesh interval.
     track.set_initial_time(0.5)
-    track.set_final_time(3.0)
+    track.set_final_time(3.5)
     # motion_1: 0.5 - 3.0
     # motion 2: 0.7 - 2.5
     # motion 3: 0.5 - 3.5

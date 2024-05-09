@@ -1,0 +1,352 @@
+[info] Loaded model model from file model.osim
+[info] Loaded model model from file model.osim
+[info] ========================================================================
+[info] MocoCasADiSolver starting.
+[info] Thu May  9 16:56:47 2024
+[info] ------------------------------------------------------------------------
+Costs: (total: 2)
+  marker_tracking. MocoMarkerTrackingGoal, enabled: true, mode: cost, weight: 10.0
+        allow unused references: 
+        tracked marker(s):
+            C7, weight: 20.0
+            CLAV, weight: 20.0
+            RELB, weight: 10.0
+            RFIN, weight: 2.0
+            RFRM, weight: 2.0
+            RSHO, weight: 10.0
+            RUPA, weight: 5.0
+            RWRA, weight: 10.0
+            RWRB, weight: 10.0
+  control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.01
+        control: /forceset/DELT1, weight: 1.0
+        control: /forceset/DELT2, weight: 1.0
+        control: /forceset/DELT3, weight: 1.0
+        control: /forceset/SUPSP, weight: 1.0
+        control: /forceset/INFSP, weight: 1.0
+        control: /forceset/SUBSC, weight: 1.0
+        control: /forceset/TMIN, weight: 1.0
+        control: /forceset/TMAJ, weight: 1.0
+        control: /forceset/PECM1, weight: 1.0
+        control: /forceset/PECM2, weight: 1.0
+        control: /forceset/PECM3, weight: 1.0
+        control: /forceset/LAT1, weight: 1.0
+        control: /forceset/LAT2, weight: 1.0
+        control: /forceset/LAT3, weight: 1.0
+        control: /forceset/CORB, weight: 1.0
+        control: /forceset/TRIlong, weight: 1.0
+        control: /forceset/TRIlat, weight: 1.0
+        control: /forceset/TRImed, weight: 1.0
+        control: /forceset/ANC, weight: 1.0
+        control: /forceset/SUP, weight: 1.0
+        control: /forceset/BIClong, weight: 1.0
+        control: /forceset/BICshort, weight: 1.0
+        control: /forceset/BRA, weight: 1.0
+        control: /forceset/BRD, weight: 1.0
+        control: /forceset/ECRL, weight: 1.0
+        control: /forceset/ECRB, weight: 1.0
+        control: /forceset/ECU, weight: 1.0
+        control: /forceset/FCR, weight: 1.0
+        control: /forceset/FCU, weight: 1.0
+        control: /forceset/PL, weight: 1.0
+        control: /forceset/PT, weight: 1.0
+        control: /forceset/PQ, weight: 1.0
+        control: /forceset/FDSL, weight: 1.0
+        control: /forceset/FDSR, weight: 1.0
+        control: /forceset/FDSM, weight: 1.0
+        control: /forceset/FDSI, weight: 1.0
+        control: /forceset/FDPL, weight: 1.0
+        control: /forceset/FDPR, weight: 1.0
+        control: /forceset/FDPM, weight: 1.0
+        control: /forceset/FDPI, weight: 1.0
+        control: /forceset/EDCL, weight: 1.0
+        control: /forceset/EDCR, weight: 1.0
+        control: /forceset/EDCM, weight: 1.0
+        control: /forceset/EDCI, weight: 1.0
+        control: /forceset/EDM, weight: 1.0
+        control: /forceset/EIP, weight: 1.0
+        control: /forceset/EPL, weight: 1.0
+        control: /forceset/EPB, weight: 1.0
+        control: /forceset/FPL, weight: 1.0
+        control: /forceset/APL, weight: 1.0
+Endpoint constraints: (total: 1)
+  initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+Kinematic constraints: (total: 13)
+  kinematic_constraint_cid26. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid27. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid28. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid29. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid30. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid31. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid32. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid33. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid34. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid35. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid36. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid37. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+  kinematic_constraint_cid38. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+Path constraints: none
+States: (total: 102)
+  /forceset/EIP/activation. bounds: [0.01, 1]
+  /forceset/EDCM/activation. bounds: [0.01, 1]
+  /forceset/FDPL/activation. bounds: [0.01, 1]
+  /forceset/FDSR/activation. bounds: [0.01, 1]
+  /forceset/FDSL/activation. bounds: [0.01, 1]
+  /forceset/PT/activation. bounds: [0.01, 1]
+  /forceset/FCU/activation. bounds: [0.01, 1]
+  /forceset/EDCL/activation. bounds: [0.01, 1]
+  /forceset/ECRB/activation. bounds: [0.01, 1]
+  /forceset/BRD/activation. bounds: [0.01, 1]
+  /forceset/BRA/activation. bounds: [0.01, 1]
+  /forceset/SUP/activation. bounds: [0.01, 1]
+  /forceset/FDSI/activation. bounds: [0.01, 1]
+  /forceset/ANC/activation. bounds: [0.01, 1]
+  /forceset/TRImed/activation. bounds: [0.01, 1]
+  /forceset/LAT3/activation. bounds: [0.01, 1]
+  /forceset/LAT2/activation. bounds: [0.01, 1]
+  /forceset/FCR/activation. bounds: [0.01, 1]
+  /forceset/PECM3/activation. bounds: [0.01, 1]
+  /forceset/PECM2/activation. bounds: [0.01, 1]
+  /forceset/PECM1/activation. bounds: [0.01, 1]
+  /forceset/TMAJ/activation. bounds: [0.01, 1]
+  /forceset/SUBSC/activation. bounds: [0.01, 1]
+  /forceset/INFSP/activation. bounds: [0.01, 1]
+  /forceset/SUPSP/activation. bounds: [0.01, 1]
+  /forceset/DELT2/activation. bounds: [0.01, 1]
+  /forceset/DELT1/activation. bounds: [0.01, 1]
+  /forceset/EPB/activation. bounds: [0.01, 1]
+  /forceset/ECU/activation. bounds: [0.01, 1]
+  /jointset/wrist_hand/wrist_hand_r3/value. bounds: [-99999.9, 99999.9]
+  /jointset/radiocarpal/flexion/speed. bounds: [-50, 50]
+  /forceset/TRIlat/activation. bounds: [0.01, 1]
+  /jointset/radiocarpal/flexion/value. bounds: [-1.22173, 1.22173]
+  /jointset/radiocarpal/deviation/speed. bounds: [-50, 50]
+  /jointset/radiocarpal/deviation/value. bounds: [-0.174533, 0.436332]
+  /jointset/radioulnar/pro_sup/value. bounds: [-1.5708, 1.5708]
+  /jointset/elbow/elbow_flexion/speed. bounds: [-50, 50]
+  /forceset/APL/activation. bounds: [0.01, 1]
+  /forceset/PL/activation. bounds: [0.01, 1]
+  /jointset/wrist_hand/wrist_hand_r3/speed. bounds: [-50, 50]
+  /jointset/elbow/elbow_flexion/value. bounds: [0, 2.26893]
+  /jointset/shoulder1/shoulder1_r2/speed. bounds: [-50, 50]
+  /jointset/shoulder1/shoulder1_r2/value. bounds: [-99999.9, 99999.9]
+  /forceset/TMIN/activation. bounds: [0.01, 1]
+  /jointset/shoulder1/shoulder_elv/speed. bounds: [-50, 50]
+  /jointset/shoulder1/shoulder_elv/value. bounds: [0, 3.14159]
+  /jointset/shoulder0/elv_angle/speed. bounds: [-50, 50]
+  /jointset/unrothum/unrothum_r2/speed. bounds: [-50, 50]
+  /jointset/unrothum/unrothum_r2/value. bounds: [-99999.9, 99999.9]
+  /forceset/FDSM/activation. bounds: [0.01, 1]
+  /jointset/unrothum/unrothum_r3/speed. bounds: [-50, 50]
+  /forceset/PQ/activation. bounds: [0.01, 1]
+  /forceset/BICshort/activation. bounds: [0.01, 1]
+  /jointset/unrothum/unrothum_r3/value. bounds: [-99999.9, 99999.9]
+  /forceset/CORB/activation. bounds: [0.01, 1]
+  /jointset/unrothum/unrothum_r1/speed. bounds: [-50, 50]
+  /forceset/TRIlong/activation. bounds: [0.01, 1]
+  /jointset/unrothum/unrothum_r1/value. bounds: [-99999.9, 99999.9]
+  /forceset/EDCI/activation. bounds: [0.01, 1]
+  /forceset/DELT3/activation. bounds: [0.01, 1]
+  /jointset/shoulder2/shoulder_rot/value. bounds: [-1.5708, 2.0944]
+  /jointset/acromioclavicular/acromioclavicular_r1/value. bounds: [-99999.9, 99999.9]
+  /forceset/EDM/activation. bounds: [0.01, 1]
+  /jointset/acromioclavicular/acromioclavicular_r3/speed. bounds: [-50, 50]
+  /forceset/FDPI/activation. bounds: [0.01, 1]
+  /jointset/acromioclavicular/acromioclavicular_r3/value. bounds: [-99999.9, 99999.9]
+  /jointset/acromioclavicular/acromioclavicular_r1/speed. bounds: [-50, 50]
+  /jointset/acromioclavicular/acromioclavicular_r2/speed. bounds: [-50, 50]
+  /jointset/unrotscap/unrotscap_r2/speed. bounds: [-50, 50]
+  /forceset/BIClong/activation. bounds: [0.01, 1]
+  /jointset/wrist_hand/wrist_hand_r1/value. bounds: [-99999.9, 99999.9]
+  /jointset/shoulder0/elv_angle/value. bounds: [-1.65806, 2.26893]
+  /jointset/unrotscap/unrotscap_r3/speed. bounds: [-50, 50]
+  /jointset/unrotscap/unrotscap_r3/value. bounds: [-99999.9, 99999.9]
+  /jointset/sternoclavicular/sternoclavicular_r3/speed. bounds: [-50, 50]
+  /forceset/FDPR/activation. bounds: [0.01, 1]
+  /jointset/sternoclavicular/sternoclavicular_r3/value. bounds: [-99999.9, 99999.9]
+  /jointset/shoulder2/shoulder_rot/speed. bounds: [-50, 50]
+  /jointset/sternoclavicular/sternoclavicular_r2/speed. bounds: [-50, 50]
+  /jointset/sternoclavicular/sternoclavicular_r2/value. bounds: [-99999.9, 99999.9]
+  /forceset/LAT1/activation. bounds: [0.01, 1]
+  /jointset/groundthorax/t_z/speed. bounds: [-50, 50]
+  /jointset/groundthorax/t_z/value. bounds: [-100, 100]
+  /forceset/FPL/activation. bounds: [0.01, 1]
+  /forceset/EDCR/activation. bounds: [0.01, 1]
+  /jointset/unrotscap/unrotscap_r2/value. bounds: [-99999.9, 99999.9]
+  /jointset/groundthorax/t_y/speed. bounds: [-50, 50]
+  /jointset/acromioclavicular/acromioclavicular_r2/value. bounds: [-99999.9, 99999.9]
+  /jointset/groundthorax/t_y/value. bounds: [-100, 100]
+  /jointset/groundthorax/t_x/speed. bounds: [-50, 50]
+  /forceset/FDPM/activation. bounds: [0.01, 1]
+  /jointset/wrist_hand/wrist_hand_r1/speed. bounds: [-50, 50]
+  /jointset/groundthorax/t_x/value. bounds: [-100, 100]
+  /jointset/groundthorax/r_z/value. bounds: [-6.28319, 6.28319]
+  /forceset/ECRL/activation. bounds: [0.01, 1]
+  /jointset/groundthorax/r_y/speed. bounds: [-50, 50]
+  /jointset/groundthorax/r_z/speed. bounds: [-50, 50]
+  /jointset/groundthorax/r_y/value. bounds: [-6.28319, 6.28319]
+  /forceset/EPL/activation. bounds: [0.01, 1]
+  /jointset/radioulnar/pro_sup/speed. bounds: [-50, 50]
+  /jointset/groundthorax/r_x/speed. bounds: [-50, 50]
+  /jointset/groundthorax/r_x/value. bounds: [-6.28319, 6.28319]
+Controls: (total: 50)
+  /forceset/FPL. bounds: [0.01, 1]
+  /forceset/EPL. bounds: [0.01, 1]
+  /forceset/EDCI. bounds: [0.01, 1]
+  /forceset/FDPI. bounds: [0.01, 1]
+  /forceset/FDPM. bounds: [0.01, 1]
+  /forceset/FDPL. bounds: [0.01, 1]
+  /forceset/FDSI. bounds: [0.01, 1]
+  /forceset/FDPR. bounds: [0.01, 1]
+  /forceset/PT. bounds: [0.01, 1]
+  /forceset/FCU. bounds: [0.01, 1]
+  /forceset/EDCL. bounds: [0.01, 1]
+  /forceset/FCR. bounds: [0.01, 1]
+  /forceset/ECRB. bounds: [0.01, 1]
+  /forceset/FDSL. bounds: [0.01, 1]
+  /forceset/BRD. bounds: [0.01, 1]
+  /forceset/EPB. bounds: [0.01, 1]
+  /forceset/BRA. bounds: [0.01, 1]
+  /forceset/APL. bounds: [0.01, 1]
+  /forceset/BICshort. bounds: [0.01, 1]
+  /forceset/BIClong. bounds: [0.01, 1]
+  /forceset/FDSM. bounds: [0.01, 1]
+  /forceset/ANC. bounds: [0.01, 1]
+  /forceset/TRIlat. bounds: [0.01, 1]
+  /forceset/CORB. bounds: [0.01, 1]
+  /forceset/LAT3. bounds: [0.01, 1]
+  /forceset/EDM. bounds: [0.01, 1]
+  /forceset/LAT1. bounds: [0.01, 1]
+  /forceset/PECM3. bounds: [0.01, 1]
+  /forceset/PECM2. bounds: [0.01, 1]
+  /forceset/EDCM. bounds: [0.01, 1]
+  /forceset/PECM1. bounds: [0.01, 1]
+  /forceset/EIP. bounds: [0.01, 1]
+  /forceset/EDCR. bounds: [0.01, 1]
+  /forceset/TRImed. bounds: [0.01, 1]
+  /forceset/TMAJ. bounds: [0.01, 1]
+  /forceset/PQ. bounds: [0.01, 1]
+  /forceset/ECRL. bounds: [0.01, 1]
+  /forceset/TRIlong. bounds: [0.01, 1]
+  /forceset/TMIN. bounds: [0.01, 1]
+  /forceset/PL. bounds: [0.01, 1]
+  /forceset/SUBSC. bounds: [0.01, 1]
+  /forceset/INFSP. bounds: [0.01, 1]
+  /forceset/FDSR. bounds: [0.01, 1]
+  /forceset/LAT2. bounds: [0.01, 1]
+  /forceset/SUPSP. bounds: [0.01, 1]
+  /forceset/DELT3. bounds: [0.01, 1]
+  /forceset/ECU. bounds: [0.01, 1]
+  /forceset/DELT2. bounds: [0.01, 1]
+  /forceset/SUP. bounds: [0.01, 1]
+  /forceset/DELT1. bounds: [0.01, 1]
+Parameters: none
+[info] Number of threads: 32
+
+List of user-set options:
+
+                                    Name   Value                used
+                acceptable_compl_inf_tol = 0.001                 yes
+              acceptable_constr_viol_tol = 0.0001                yes
+                 acceptable_dual_inf_tol = 0.001                 yes
+                          acceptable_tol = 0.001                 yes
+                           compl_inf_tol = 0.001                 yes
+                         constr_viol_tol = 0.0001                yes
+                            dual_inf_tol = 0.001                 yes
+                   hessian_approximation = limited-memory        yes
+                                max_iter = 20000                 yes
+                      print_user_options = yes                   yes
+                                     tol = 0.001                 yes
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit http://projects.coin-or.org/Ipopt
+******************************************************************************
+
+This is Ipopt version 3.12.8, running with linear solver mumps.
+NOTE: Other linear solvers might be more efficient (see Ipopt documentation).
+
+Number of nonzeros in equality constraint Jacobian...:  3587185
+Number of nonzeros in inequality constraint Jacobian.:        0
+Number of nonzeros in Lagrangian Hessian.............:        0
+
+Total number of variables............................:    17315
+                     variables with only lower bounds:        0
+                variables with lower and upper bounds:    17315
+                     variables with only upper bounds:        0
+Total number of equality constraints.................:    14739
+Total number of inequality constraints...............:        0
+        inequality constraints with only lower bounds:        0
+   inequality constraints with lower and upper bounds:        0
+        inequality constraints with only upper bounds:        0
+
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+   0  4.1640987e+03 2.38e+06 9.81e+01   0.0 0.00e+00    -  0.00e+00 0.00e+00   0
+   1  4.1057407e+03 2.38e+06 1.99e+04   3.1 5.51e+03    -  3.53e-02 1.76e-04f  1
+   2  5.2538536e+03 2.34e+06 2.96e+05   3.8 1.00e+04    -  4.69e-02 1.19e-02f  1
+   3  8.3538702e+03 2.33e+06 4.41e+06   4.8 1.94e+04    -  6.21e-02 3.50e-03f  1
+   4  1.7126854e+04 2.23e+06 5.82e+06   3.9 3.24e+03    -  3.12e-01 4.65e-02f  1
+   5  2.7120558e+05 1.48e+06 3.02e+07   4.0 2.79e+03    -  9.93e-01 2.73e-01f  1
+Warning: Cutting back alpha due to evaluation error
+   6  2.2193692e+05 1.47e+06 2.13e+07   6.0 1.36e+04    -  9.07e-03 9.29e-03f  2
+   7  1.8610725e+05 1.46e+06 1.20e+07   5.6 1.78e+04    -  2.05e-02 5.12e-03f  1
+   8  1.6649359e+06 6.16e+05 1.00e+09   4.1 9.48e+02    -  3.18e-01 6.50e-01h  1
+   9  1.5088183e+05 5.89e+05 8.81e+08   5.4 5.66e+03    -  5.86e-02 5.04e-02f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  10  5.8711858e+04 6.60e+05 8.40e+08   5.9 6.71e+03    -  1.00e+00 2.59e-02f  1
+  11  5.1199294e+04 6.57e+05 9.67e+08   6.9 3.81e+03    -  4.86e-02 2.69e-02h  1
+  12  4.2397295e+04 4.33e+06 1.32e+11   6.9 1.28e+04    -  1.38e-01 6.21e-02f  1
+  13  3.7835628e+04 4.38e+07 1.61e+12   6.9 3.42e+04    -  2.95e-02 1.83e-02f  1
+  14  3.7917497e+04 4.38e+07 1.61e+12   6.2 1.30e+05    -  8.19e-05 4.96e-06f  5
+  15  3.8428035e+04 4.38e+07 1.61e+12   5.5 1.48e+05    -  6.88e-05 1.53e-05f  5
+  16  4.4326876e+04 4.38e+07 1.61e+12   4.8 2.32e+05    -  7.01e-05 7.93e-05f  3
+  17  6.9445625e+04 4.37e+07 1.61e+12   4.8 2.69e+05    -  1.60e-04 1.60e-04s 10
+  18  8.6672849e+04 4.37e+07 1.61e+12   4.8 2.50e+05    -  7.26e-05 7.26e-05s 10
+  19r 8.6672849e+04 4.37e+07 9.97e+02   4.8 0.00e+00    -  0.00e+00 0.00e+00R  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  20r 8.6534872e+04 4.36e+07 2.61e+04   5.5 9.77e+05    -  3.96e-02 3.65e-04f  2
+  21r 8.6534872e+04 4.36e+07 9.99e+02   4.2 0.00e+00    -  0.00e+00 2.84e-07R  8
+  22r 8.6545580e+04 4.30e+07 1.34e+03   3.2 4.31e+06    -  9.79e-03 2.99e-04f  1
+  23  8.6920718e+04 4.30e+07 4.29e+02   3.5 1.16e+05    -  4.45e-05 4.33e-06f  4
+  24r 8.6920718e+04 4.30e+07 9.99e+02   3.8 0.00e+00    -  0.00e+00 4.26e-07R  8
+  25r 8.6886004e+04 4.13e+07 1.01e+03   3.2 3.19e+06    -  6.07e-03 3.40e-04f  1
+  26  8.7603517e+04 4.13e+07 8.84e+02   3.5 1.47e+05    -  1.03e-04 2.84e-05h  2
+  27r 8.7603517e+04 4.13e+07 9.99e+02   3.6 0.00e+00    -  0.00e+00 3.95e-07R  8
+  28r 8.7581310e+04 3.87e+07 9.98e+02   2.9 5.06e+05    -  7.39e-03 3.73e-04f  1
+  29r 8.7473487e+04 3.71e+07 2.06e+03   4.4 3.53e+05    -  1.10e-02 6.54e-04f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  30  8.2231842e+04 3.71e+07 5.94e+03   3.5 1.63e+05    -  9.20e-05 9.81e-05h  1
+  31  8.3441951e+04 3.71e+07 8.53e+03   3.5 1.80e+05    -  3.35e-04 2.79e-05h  1
+  32  8.5890511e+04 3.71e+07 3.30e+04   3.5 1.81e+05    -  2.62e-04 9.60e-05h  1
+  33  8.9635477e+04 3.71e+07 4.62e+04   3.5 2.00e+05    -  2.01e-04 6.76e-05h  1
+  34  9.2237810e+04 3.71e+07 5.36e+04   3.5 2.31e+05    -  1.20e-04 4.96e-05h  2
+  35  9.2564085e+04 3.71e+07 5.43e+04   3.5 2.50e+05    -  1.79e-04 6.85e-06h  4
+  36r 9.2564085e+04 3.71e+07 9.99e+02   3.5 0.00e+00    -  0.00e+00 3.39e-07R  9
+  37r 9.1867098e+04 3.13e+07 2.76e+03   4.0 9.12e+05    -  3.56e-03 9.32e-04f  1
+  38  9.1417013e+04 3.13e+07 1.14e+03   3.5 2.39e+05    -  1.75e-04 4.41e-05f  1
+  39  9.1843020e+04 3.13e+07 5.37e+03   3.5 2.56e+05    -  9.61e-05 4.16e-05h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  40  9.7490936e+04 3.13e+07 1.09e+04   3.5 2.56e+05    -  1.36e-04 3.72e-05h  2
+  41r 9.7490936e+04 3.13e+07 9.99e+02   3.5 0.00e+00    -  0.00e+00 2.50e-07R  9
+  42r 9.7309819e+04 2.71e+07 9.97e+02   3.3 7.44e+05    -  2.04e-03 1.03e-03f  1
+  43r 9.7309819e+04 2.71e+07 9.98e+02   3.5 0.00e+00    -  0.00e+00 3.37e-07R  7
+  44r 9.7285603e+04 2.51e+07 9.96e+02   2.5 4.92e+05    -  4.15e-03 6.34e-04f  1
+  45  9.8550153e+04 2.51e+07 1.23e+03   3.5 2.12e+05    -  7.91e-04 3.83e-05h  2
+  46r 9.8550153e+04 2.51e+07 9.98e+02   3.5 0.00e+00    -  0.00e+00 4.46e-07R  7
+  47r 9.7848738e+04 1.91e+07 1.46e+03   3.4 3.78e+05    -  1.12e-02 2.68e-03f  1
+  48  1.0049106e+05 1.91e+07 3.41e+03   3.5 1.02e+05    -  3.37e-05 1.88e-05h  1
+  49  1.0086407e+05 1.91e+07 4.59e+03   3.5 1.37e+05    -  1.01e-04 7.20e-06h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  50  1.0069007e+05 1.91e+07 5.22e+03   3.5 1.53e+05    -  1.45e-04 3.16e-06f  4
+  51  1.0078754e+05 1.91e+07 5.44e+03   3.5 1.90e+05    -  1.32e-04 1.31e-06f  6
+  52  1.0110424e+05 1.91e+07 7.00e+03   3.5 2.95e+05    -  1.27e-04 8.34e-06f  4
+  53  1.0117954e+05 1.91e+07 7.09e+03   3.5 3.73e+05    -  1.42e-04 1.17e-06f  7
+  54  1.0117954e+05 1.91e+07 7.09e+03   3.5 4.82e+05    -  1.68e-04 9.62e-10f 18
+  55  1.0117954e+05 1.91e+07 7.09e+03   3.5 4.23e+05    -  1.04e-04 5.97e-10f 18
+  56  1.0117954e+05 1.91e+07 7.09e+03   3.5 4.12e+05    -  1.24e-04 1.03e-10f 20
+  57  1.0117954e+05 1.91e+07 1.49e+07   3.5 4.30e+05    -  4.26e-04 3.97e-11f 22
+  58  1.1594794e+05 1.91e+07 1.14e+05   3.5 1.56e+05    -  8.28e-05 8.28e-05s  9
+  59r 1.1594794e+05 1.91e+07 9.99e+02   3.5 0.00e+00    -  0.00e+00 0.00e+00R  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  60r 1.1563355e+05 1.40e+07 9.91e+02   2.8 1.31e+05    -  2.42e-02 3.94e-03f  1
+  61  1.1564738e+05 1.40e+07 6.11e+02   3.5 1.50e+05    -  3.51e-04 6.60e-08f 10

@@ -1,0 +1,1236 @@
+[2024-05-09 16:56:23.742] [info] Loaded model model from file model.osim
+[2024-05-09 16:56:35.202] [info] Loaded model model from file model.osim
+[2024-05-09 16:56:47.120] [info] ========================================================================
+[2024-05-09 16:56:47.120] [info] MocoCasADiSolver starting.
+[2024-05-09 16:56:47.120] [info] Thu May  9 16:56:47 2024
+[2024-05-09 16:56:47.120] [info] ------------------------------------------------------------------------
+[2024-05-09 16:56:47.120] [cout] [info] Costs: (total: 2)
+[2024-05-09 16:56:47.121] [cout] [info]   marker_tracking. MocoMarkerTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2024-05-09 16:56:47.121] [cout] [info]         allow unused references: 
+[2024-05-09 16:56:47.121] [cout] [info]         tracked marker(s):
+[2024-05-09 16:56:47.121] [cout] [info]             C7, weight: 20.0
+[2024-05-09 16:56:47.121] [cout] [info]             CLAV, weight: 20.0
+[2024-05-09 16:56:47.121] [cout] [info]             RELB, weight: 10.0
+[2024-05-09 16:56:47.121] [cout] [info]             RFIN, weight: 2.0
+[2024-05-09 16:56:47.121] [cout] [info]             RFRM, weight: 2.0
+[2024-05-09 16:56:47.121] [cout] [info]             RSHO, weight: 10.0
+[2024-05-09 16:56:47.121] [cout] [info]             RUPA, weight: 5.0
+[2024-05-09 16:56:47.121] [cout] [info]             RWRA, weight: 10.0
+[2024-05-09 16:56:47.121] [cout] [info]             RWRB, weight: 10.0
+[2024-05-09 16:56:47.121] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.01
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/DELT1, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/DELT2, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/DELT3, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/SUPSP, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/INFSP, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/SUBSC, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/TMIN, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/TMAJ, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/PECM1, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/PECM2, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/PECM3, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/LAT1, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/LAT2, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/LAT3, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/CORB, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/TRIlong, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/TRIlat, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/TRImed, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/ANC, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/SUP, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/BIClong, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/BICshort, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/BRA, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/BRD, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/ECRL, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/ECRB, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/ECU, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/FCR, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/FCU, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/PL, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/PT, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/PQ, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/FDSL, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/FDSR, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/FDSM, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/FDSI, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/FDPL, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/FDPR, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/FDPM, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/FDPI, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/EDCL, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/EDCR, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/EDCM, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/EDCI, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/EDM, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/EIP, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/EPL, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/EPB, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/FPL, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info]         control: /forceset/APL, weight: 1.0
+[2024-05-09 16:56:47.121] [cout] [info] Endpoint constraints: (total: 1)
+[2024-05-09 16:56:47.121] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2024-05-09 16:56:47.121] [cout] [info] Kinematic constraints: (total: 13)
+[2024-05-09 16:56:47.121] [cout] [info]   kinematic_constraint_cid26. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 16:56:47.121] [cout] [info]   kinematic_constraint_cid27. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 16:56:47.121] [cout] [info]   kinematic_constraint_cid28. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 16:56:47.121] [cout] [info]   kinematic_constraint_cid29. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 16:56:47.121] [cout] [info]   kinematic_constraint_cid30. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 16:56:47.121] [cout] [info]   kinematic_constraint_cid31. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 16:56:47.121] [cout] [info]   kinematic_constraint_cid32. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 16:56:47.121] [cout] [info]   kinematic_constraint_cid33. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 16:56:47.121] [cout] [info]   kinematic_constraint_cid34. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 16:56:47.121] [cout] [info]   kinematic_constraint_cid35. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 16:56:47.121] [cout] [info]   kinematic_constraint_cid36. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 16:56:47.121] [cout] [info]   kinematic_constraint_cid37. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 16:56:47.121] [cout] [info]   kinematic_constraint_cid38. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 16:56:47.121] [cout] [info] Path constraints: none
+[2024-05-09 16:56:47.121] [cout] [info] States: (total: 102)
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/EIP/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/EDCM/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/FDPL/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/FDSR/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/FDSL/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/PT/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/FCU/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/EDCL/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/ECRB/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/BRD/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/BRA/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/SUP/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/FDSI/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/ANC/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/TRImed/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/LAT3/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/LAT2/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/FCR/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/PECM3/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/PECM2/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/PECM1/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/TMAJ/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/SUBSC/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/INFSP/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/SUPSP/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/DELT2/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/DELT1/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/EPB/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.121] [cout] [info]   /forceset/ECU/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/wrist_hand/wrist_hand_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/radiocarpal/flexion/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/TRIlat/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/radiocarpal/flexion/value. bounds: [-1.22173, 1.22173]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/radiocarpal/deviation/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/radiocarpal/deviation/value. bounds: [-0.174533, 0.436332]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/radioulnar/pro_sup/value. bounds: [-1.5708, 1.5708]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/elbow/elbow_flexion/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/APL/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/PL/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/wrist_hand/wrist_hand_r3/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/elbow/elbow_flexion/value. bounds: [0, 2.26893]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/shoulder1/shoulder1_r2/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/shoulder1/shoulder1_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/TMIN/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/shoulder1/shoulder_elv/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/shoulder1/shoulder_elv/value. bounds: [0, 3.14159]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/shoulder0/elv_angle/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/unrothum/unrothum_r2/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/unrothum/unrothum_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FDSM/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/unrothum/unrothum_r3/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/PQ/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/BICshort/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/unrothum/unrothum_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/CORB/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/unrothum/unrothum_r1/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/TRIlong/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/unrothum/unrothum_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/EDCI/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/DELT3/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/shoulder2/shoulder_rot/value. bounds: [-1.5708, 2.0944]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/EDM/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r3/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FDPI/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r1/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r2/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/unrotscap/unrotscap_r2/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/BIClong/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/wrist_hand/wrist_hand_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/shoulder0/elv_angle/value. bounds: [-1.65806, 2.26893]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/unrotscap/unrotscap_r3/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/unrotscap/unrotscap_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r3/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FDPR/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/shoulder2/shoulder_rot/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r2/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/LAT1/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/groundthorax/t_z/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/groundthorax/t_z/value. bounds: [-100, 100]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FPL/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/EDCR/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/unrotscap/unrotscap_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/groundthorax/t_y/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/groundthorax/t_y/value. bounds: [-100, 100]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/groundthorax/t_x/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FDPM/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/wrist_hand/wrist_hand_r1/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/groundthorax/t_x/value. bounds: [-100, 100]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/groundthorax/r_z/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/ECRL/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/groundthorax/r_y/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/groundthorax/r_z/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/groundthorax/r_y/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/EPL/activation. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/radioulnar/pro_sup/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/groundthorax/r_x/speed. bounds: [-50, 50]
+[2024-05-09 16:56:47.122] [cout] [info]   /jointset/groundthorax/r_x/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 16:56:47.122] [cout] [info] Controls: (total: 50)
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FPL. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/EPL. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/EDCI. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FDPI. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FDPM. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FDPL. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FDSI. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FDPR. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/PT. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FCU. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/EDCL. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FCR. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/ECRB. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FDSL. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/BRD. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/EPB. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/BRA. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/APL. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/BICshort. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/BIClong. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FDSM. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/ANC. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/TRIlat. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/CORB. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/LAT3. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/EDM. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/LAT1. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/PECM3. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/PECM2. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/EDCM. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/PECM1. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/EIP. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/EDCR. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/TRImed. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/TMAJ. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/PQ. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/ECRL. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/TRIlong. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/TMIN. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/PL. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/SUBSC. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/INFSP. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/FDSR. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/LAT2. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/SUPSP. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/DELT3. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/ECU. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/DELT2. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/SUP. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info]   /forceset/DELT1. bounds: [0.01, 1]
+[2024-05-09 16:56:47.122] [cout] [info] Parameters: none
+[2024-05-09 16:56:57.013] [info] Number of threads: 32
+[2024-05-09 17:24:47.011] [info] Loaded model model from file model.osim
+[2024-05-09 17:24:53.235] [info] Loaded model model from file model.osim
+[2024-05-09 17:24:59.270] [info] ========================================================================
+[2024-05-09 17:24:59.270] [info] MocoCasADiSolver starting.
+[2024-05-09 17:24:59.270] [info] Thu May  9 17:24:59 2024
+[2024-05-09 17:24:59.270] [info] ------------------------------------------------------------------------
+[2024-05-09 17:24:59.270] [cout] [info] Costs: (total: 2)
+[2024-05-09 17:24:59.270] [cout] [info]   marker_tracking. MocoMarkerTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2024-05-09 17:24:59.270] [cout] [info]         allow unused references: 
+[2024-05-09 17:24:59.270] [cout] [info]         tracked marker(s):
+[2024-05-09 17:24:59.270] [cout] [info]             C7, weight: 20.0
+[2024-05-09 17:24:59.270] [cout] [info]             CLAV, weight: 20.0
+[2024-05-09 17:24:59.270] [cout] [info]             RELB, weight: 10.0
+[2024-05-09 17:24:59.270] [cout] [info]             RFIN, weight: 2.0
+[2024-05-09 17:24:59.270] [cout] [info]             RFRM, weight: 2.0
+[2024-05-09 17:24:59.270] [cout] [info]             RSHO, weight: 10.0
+[2024-05-09 17:24:59.270] [cout] [info]             RUPA, weight: 5.0
+[2024-05-09 17:24:59.270] [cout] [info]             RWRA, weight: 10.0
+[2024-05-09 17:24:59.270] [cout] [info]             RWRB, weight: 10.0
+[2024-05-09 17:24:59.270] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.01
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/DELT1, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/DELT2, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/DELT3, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/SUPSP, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/INFSP, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/SUBSC, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/TMIN, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/TMAJ, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/PECM1, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/PECM2, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/PECM3, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/LAT1, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/LAT2, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/LAT3, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/CORB, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/TRIlong, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/TRIlat, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/TRImed, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/ANC, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/SUP, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/BIClong, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/BICshort, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/BRA, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/BRD, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/ECRL, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/ECRB, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/ECU, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/FCR, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/FCU, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/PL, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/PT, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/PQ, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/FDSL, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/FDSR, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/FDSM, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/FDSI, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/FDPL, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/FDPR, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/FDPM, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/FDPI, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/EDCL, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/EDCR, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/EDCM, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/EDCI, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/EDM, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/EIP, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/EPL, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/EPB, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/FPL, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info]         control: /forceset/APL, weight: 1.0
+[2024-05-09 17:24:59.270] [cout] [info] Endpoint constraints: (total: 1)
+[2024-05-09 17:24:59.270] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2024-05-09 17:24:59.270] [cout] [info] Kinematic constraints: (total: 13)
+[2024-05-09 17:24:59.270] [cout] [info]   kinematic_constraint_cid26. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:24:59.270] [cout] [info]   kinematic_constraint_cid27. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:24:59.270] [cout] [info]   kinematic_constraint_cid28. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:24:59.270] [cout] [info]   kinematic_constraint_cid29. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:24:59.270] [cout] [info]   kinematic_constraint_cid30. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:24:59.270] [cout] [info]   kinematic_constraint_cid31. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:24:59.270] [cout] [info]   kinematic_constraint_cid32. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:24:59.270] [cout] [info]   kinematic_constraint_cid33. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:24:59.270] [cout] [info]   kinematic_constraint_cid34. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:24:59.270] [cout] [info]   kinematic_constraint_cid35. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:24:59.270] [cout] [info]   kinematic_constraint_cid36. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:24:59.270] [cout] [info]   kinematic_constraint_cid37. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:24:59.270] [cout] [info]   kinematic_constraint_cid38. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:24:59.270] [cout] [info] Path constraints: none
+[2024-05-09 17:24:59.270] [cout] [info] States: (total: 102)
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EIP/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EDCM/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDPL/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDSR/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDSL/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/PT/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FCU/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EDCL/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/ECRB/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/BRD/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/BRA/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/SUP/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDSI/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/ANC/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/TRImed/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/LAT3/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/LAT2/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FCR/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/PECM3/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/PECM2/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/PECM1/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/TMAJ/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/SUBSC/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/INFSP/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/SUPSP/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/DELT2/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/DELT1/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EPB/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/ECU/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/wrist_hand/wrist_hand_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/radiocarpal/flexion/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/TRIlat/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/radiocarpal/flexion/value. bounds: [-1.22173, 1.22173]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/radiocarpal/deviation/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/radiocarpal/deviation/value. bounds: [-0.174533, 0.436332]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/radioulnar/pro_sup/value. bounds: [-1.5708, 1.5708]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/elbow/elbow_flexion/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/APL/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/PL/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/wrist_hand/wrist_hand_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/elbow/elbow_flexion/value. bounds: [0, 2.26893]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/shoulder1/shoulder1_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/shoulder1/shoulder1_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/TMIN/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/shoulder1/shoulder_elv/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/shoulder1/shoulder_elv/value. bounds: [0, 3.14159]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/shoulder0/elv_angle/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/unrothum/unrothum_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/unrothum/unrothum_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDSM/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/unrothum/unrothum_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/PQ/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/BICshort/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/unrothum/unrothum_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/CORB/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/unrothum/unrothum_r1/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/TRIlong/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/unrothum/unrothum_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EDCI/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/DELT3/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/shoulder2/shoulder_rot/value. bounds: [-1.5708, 2.0944]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EDM/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDPI/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r1/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/unrotscap/unrotscap_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/BIClong/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/wrist_hand/wrist_hand_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/shoulder0/elv_angle/value. bounds: [-1.65806, 2.26893]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/unrotscap/unrotscap_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/unrotscap/unrotscap_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDPR/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/shoulder2/shoulder_rot/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/LAT1/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/groundthorax/t_z/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/groundthorax/t_z/value. bounds: [-100, 100]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FPL/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EDCR/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/unrotscap/unrotscap_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/groundthorax/t_y/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/groundthorax/t_y/value. bounds: [-100, 100]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/groundthorax/t_x/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDPM/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/wrist_hand/wrist_hand_r1/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/groundthorax/t_x/value. bounds: [-100, 100]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/groundthorax/r_z/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/ECRL/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/groundthorax/r_y/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/groundthorax/r_z/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/groundthorax/r_y/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EPL/activation. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/radioulnar/pro_sup/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/groundthorax/r_x/speed. bounds: [-50, 50]
+[2024-05-09 17:24:59.271] [cout] [info]   /jointset/groundthorax/r_x/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 17:24:59.271] [cout] [info] Controls: (total: 50)
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FPL. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EPL. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EDCI. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDPI. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDPM. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDPL. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDSI. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDPR. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/PT. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FCU. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EDCL. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FCR. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/ECRB. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDSL. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/BRD. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EPB. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/BRA. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/APL. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/BICshort. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/BIClong. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDSM. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/ANC. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/TRIlat. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/CORB. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/LAT3. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EDM. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/LAT1. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/PECM3. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/PECM2. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EDCM. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/PECM1. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EIP. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/EDCR. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/TRImed. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/TMAJ. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/PQ. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/ECRL. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/TRIlong. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/TMIN. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/PL. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/SUBSC. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/INFSP. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/FDSR. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/LAT2. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/SUPSP. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/DELT3. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/ECU. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/DELT2. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/SUP. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info]   /forceset/DELT1. bounds: [0.01, 1]
+[2024-05-09 17:24:59.271] [cout] [info] Parameters: none
+[2024-05-09 17:25:04.008] [info] Number of threads: 32
+[2024-05-09 17:30:57.638] [info] Loaded model model from file model.osim
+[2024-05-09 17:31:03.608] [info] Loaded model model from file model.osim
+[2024-05-09 17:31:09.659] [info] ========================================================================
+[2024-05-09 17:31:09.659] [info] MocoCasADiSolver starting.
+[2024-05-09 17:31:09.659] [info] Thu May  9 17:31:09 2024
+[2024-05-09 17:31:09.659] [info] ------------------------------------------------------------------------
+[2024-05-09 17:31:09.659] [cout] [info] Costs: (total: 2)
+[2024-05-09 17:31:09.659] [cout] [info]   marker_tracking. MocoMarkerTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2024-05-09 17:31:09.659] [cout] [info]         allow unused references: 
+[2024-05-09 17:31:09.659] [cout] [info]         tracked marker(s):
+[2024-05-09 17:31:09.659] [cout] [info]             C7, weight: 20.0
+[2024-05-09 17:31:09.659] [cout] [info]             CLAV, weight: 20.0
+[2024-05-09 17:31:09.659] [cout] [info]             RELB, weight: 10.0
+[2024-05-09 17:31:09.659] [cout] [info]             RFIN, weight: 2.0
+[2024-05-09 17:31:09.659] [cout] [info]             RFRM, weight: 2.0
+[2024-05-09 17:31:09.659] [cout] [info]             RSHO, weight: 10.0
+[2024-05-09 17:31:09.659] [cout] [info]             RUPA, weight: 5.0
+[2024-05-09 17:31:09.659] [cout] [info]             RWRA, weight: 10.0
+[2024-05-09 17:31:09.659] [cout] [info]             RWRB, weight: 10.0
+[2024-05-09 17:31:09.659] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.01
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/DELT1, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/DELT2, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/DELT3, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/SUPSP, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/INFSP, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/SUBSC, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/TMIN, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/TMAJ, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/PECM1, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/PECM2, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/PECM3, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/LAT1, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/LAT2, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/LAT3, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/CORB, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/TRIlong, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/TRIlat, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/TRImed, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/ANC, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/SUP, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/BIClong, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/BICshort, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/BRA, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/BRD, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/ECRL, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/ECRB, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/ECU, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/FCR, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/FCU, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/PL, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/PT, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/PQ, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/FDSL, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/FDSR, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/FDSM, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/FDSI, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/FDPL, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/FDPR, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/FDPM, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/FDPI, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/EDCL, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/EDCR, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/EDCM, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/EDCI, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/EDM, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/EIP, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/EPL, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/EPB, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/FPL, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info]         control: /forceset/APL, weight: 1.0
+[2024-05-09 17:31:09.659] [cout] [info] Endpoint constraints: (total: 1)
+[2024-05-09 17:31:09.659] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2024-05-09 17:31:09.659] [cout] [info] Kinematic constraints: (total: 13)
+[2024-05-09 17:31:09.659] [cout] [info]   kinematic_constraint_cid26. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:31:09.659] [cout] [info]   kinematic_constraint_cid27. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:31:09.659] [cout] [info]   kinematic_constraint_cid28. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:31:09.659] [cout] [info]   kinematic_constraint_cid29. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:31:09.659] [cout] [info]   kinematic_constraint_cid30. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:31:09.659] [cout] [info]   kinematic_constraint_cid31. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:31:09.659] [cout] [info]   kinematic_constraint_cid32. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:31:09.659] [cout] [info]   kinematic_constraint_cid33. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:31:09.659] [cout] [info]   kinematic_constraint_cid34. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:31:09.659] [cout] [info]   kinematic_constraint_cid35. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:31:09.659] [cout] [info]   kinematic_constraint_cid36. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:31:09.659] [cout] [info]   kinematic_constraint_cid37. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:31:09.659] [cout] [info]   kinematic_constraint_cid38. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:31:09.659] [cout] [info] Path constraints: none
+[2024-05-09 17:31:09.659] [cout] [info] States: (total: 102)
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/EIP/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/EDCM/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/FDPL/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/FDSR/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/FDSL/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/PT/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/FCU/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/EDCL/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/ECRB/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/BRD/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/BRA/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/SUP/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/FDSI/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/ANC/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/TRImed/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/LAT3/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/LAT2/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/FCR/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/PECM3/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/PECM2/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/PECM1/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/TMAJ/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/SUBSC/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/INFSP/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/SUPSP/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/DELT2/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/DELT1/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/EPB/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /forceset/ECU/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.659] [cout] [info]   /jointset/wrist_hand/wrist_hand_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/radiocarpal/flexion/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/TRIlat/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/radiocarpal/flexion/value. bounds: [-1.22173, 1.22173]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/radiocarpal/deviation/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/radiocarpal/deviation/value. bounds: [-0.174533, 0.436332]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/radioulnar/pro_sup/value. bounds: [-1.5708, 1.5708]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/elbow/elbow_flexion/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/APL/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/PL/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/wrist_hand/wrist_hand_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/elbow/elbow_flexion/value. bounds: [0, 2.26893]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/shoulder1/shoulder1_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/shoulder1/shoulder1_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/TMIN/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/shoulder1/shoulder_elv/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/shoulder1/shoulder_elv/value. bounds: [0, 3.14159]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/shoulder0/elv_angle/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/unrothum/unrothum_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/unrothum/unrothum_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FDSM/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/unrothum/unrothum_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/PQ/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/BICshort/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/unrothum/unrothum_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/CORB/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/unrothum/unrothum_r1/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/TRIlong/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/unrothum/unrothum_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/EDCI/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/DELT3/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/shoulder2/shoulder_rot/value. bounds: [-1.5708, 2.0944]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/EDM/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FDPI/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r1/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/unrotscap/unrotscap_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/BIClong/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/wrist_hand/wrist_hand_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/shoulder0/elv_angle/value. bounds: [-1.65806, 2.26893]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/unrotscap/unrotscap_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/unrotscap/unrotscap_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FDPR/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/shoulder2/shoulder_rot/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/LAT1/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/groundthorax/t_z/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/groundthorax/t_z/value. bounds: [-100, 100]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FPL/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/EDCR/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/unrotscap/unrotscap_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/groundthorax/t_y/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/groundthorax/t_y/value. bounds: [-100, 100]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/groundthorax/t_x/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FDPM/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/wrist_hand/wrist_hand_r1/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/groundthorax/t_x/value. bounds: [-100, 100]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/groundthorax/r_z/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/ECRL/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/groundthorax/r_y/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/groundthorax/r_z/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/groundthorax/r_y/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/EPL/activation. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/radioulnar/pro_sup/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/groundthorax/r_x/speed. bounds: [-50, 50]
+[2024-05-09 17:31:09.660] [cout] [info]   /jointset/groundthorax/r_x/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 17:31:09.660] [cout] [info] Controls: (total: 50)
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FPL. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/EPL. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/EDCI. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FDPI. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FDPM. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FDPL. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FDSI. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FDPR. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/PT. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FCU. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/EDCL. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FCR. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/ECRB. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FDSL. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/BRD. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/EPB. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/BRA. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/APL. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/BICshort. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/BIClong. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FDSM. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/ANC. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/TRIlat. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/CORB. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/LAT3. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/EDM. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/LAT1. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/PECM3. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/PECM2. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/EDCM. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/PECM1. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/EIP. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/EDCR. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/TRImed. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/TMAJ. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/PQ. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/ECRL. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/TRIlong. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/TMIN. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/PL. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/SUBSC. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/INFSP. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/FDSR. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/LAT2. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/SUPSP. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/DELT3. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/ECU. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/DELT2. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/SUP. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info]   /forceset/DELT1. bounds: [0.01, 1]
+[2024-05-09 17:31:09.660] [cout] [info] Parameters: none
+[2024-05-09 17:31:14.256] [info] Number of threads: 32
+[2024-05-09 17:31:58.482] [info] Set log level to Info.
+[2024-05-09 17:31:58.488] [info] ------------------------------------------------------------------------
+[2024-05-09 17:31:58.488] [info] Elapsed real time: 49 second(s).
+[2024-05-09 17:31:58.488] [info] Thu May  9 17:31:58 2024
+[2024-05-09 17:31:58.488] [warning] MocoCasADiSolver did NOT succeed:
+[2024-05-09 17:31:58.488] [warning]   Invalid_Number_Detected
+[2024-05-09 17:31:58.488] [info] ========================================================================
+[2024-05-09 17:33:01.656] [info] Loaded model model from file model.osim
+[2024-05-09 17:33:07.619] [info] Loaded model model from file model.osim
+[2024-05-09 17:33:13.590] [info] ========================================================================
+[2024-05-09 17:33:13.590] [info] MocoCasADiSolver starting.
+[2024-05-09 17:33:13.590] [info] Thu May  9 17:33:13 2024
+[2024-05-09 17:33:13.590] [info] ------------------------------------------------------------------------
+[2024-05-09 17:33:13.590] [cout] [info] Costs: (total: 2)
+[2024-05-09 17:33:13.590] [cout] [info]   marker_tracking. MocoMarkerTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2024-05-09 17:33:13.590] [cout] [info]         allow unused references: 
+[2024-05-09 17:33:13.590] [cout] [info]         tracked marker(s):
+[2024-05-09 17:33:13.590] [cout] [info]             C7, weight: 20.0
+[2024-05-09 17:33:13.590] [cout] [info]             CLAV, weight: 20.0
+[2024-05-09 17:33:13.590] [cout] [info]             RELB, weight: 10.0
+[2024-05-09 17:33:13.590] [cout] [info]             RFIN, weight: 2.0
+[2024-05-09 17:33:13.590] [cout] [info]             RFRM, weight: 2.0
+[2024-05-09 17:33:13.590] [cout] [info]             RSHO, weight: 10.0
+[2024-05-09 17:33:13.590] [cout] [info]             RUPA, weight: 5.0
+[2024-05-09 17:33:13.590] [cout] [info]             RWRA, weight: 10.0
+[2024-05-09 17:33:13.590] [cout] [info]             RWRB, weight: 10.0
+[2024-05-09 17:33:13.590] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.01
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/DELT1, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/DELT2, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/DELT3, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/SUPSP, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/INFSP, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/SUBSC, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/TMIN, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/TMAJ, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/PECM1, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/PECM2, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/PECM3, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/LAT1, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/LAT2, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/LAT3, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/CORB, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/TRIlong, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/TRIlat, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/TRImed, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/ANC, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/SUP, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/BIClong, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/BICshort, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/BRA, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/BRD, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/ECRL, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/ECRB, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/ECU, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/FCR, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/FCU, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/PL, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/PT, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/PQ, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/FDSL, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/FDSR, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/FDSM, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/FDSI, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/FDPL, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/FDPR, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/FDPM, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/FDPI, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/EDCL, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/EDCR, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/EDCM, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/EDCI, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/EDM, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/EIP, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/EPL, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/EPB, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/FPL, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info]         control: /forceset/APL, weight: 1.0
+[2024-05-09 17:33:13.590] [cout] [info] Endpoint constraints: (total: 1)
+[2024-05-09 17:33:13.590] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2024-05-09 17:33:13.590] [cout] [info] Kinematic constraints: (total: 13)
+[2024-05-09 17:33:13.590] [cout] [info]   kinematic_constraint_cid26. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:33:13.590] [cout] [info]   kinematic_constraint_cid27. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:33:13.590] [cout] [info]   kinematic_constraint_cid28. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:33:13.590] [cout] [info]   kinematic_constraint_cid29. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:33:13.590] [cout] [info]   kinematic_constraint_cid30. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:33:13.590] [cout] [info]   kinematic_constraint_cid31. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:33:13.590] [cout] [info]   kinematic_constraint_cid32. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:33:13.590] [cout] [info]   kinematic_constraint_cid33. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:33:13.590] [cout] [info]   kinematic_constraint_cid34. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:33:13.590] [cout] [info]   kinematic_constraint_cid35. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:33:13.590] [cout] [info]   kinematic_constraint_cid36. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:33:13.590] [cout] [info]   kinematic_constraint_cid37. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:33:13.590] [cout] [info]   kinematic_constraint_cid38. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:33:13.590] [cout] [info] Path constraints: none
+[2024-05-09 17:33:13.590] [cout] [info] States: (total: 102)
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/EIP/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/EDCM/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/FDPL/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/FDSR/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/FDSL/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/PT/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/FCU/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/EDCL/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/ECRB/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/BRD/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/BRA/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/SUP/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/FDSI/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/ANC/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/TRImed/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/LAT3/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/LAT2/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/FCR/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/PECM3/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/PECM2/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/PECM1/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/TMAJ/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/SUBSC/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/INFSP/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/SUPSP/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/DELT2/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/DELT1/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/EPB/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/ECU/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/wrist_hand/wrist_hand_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/radiocarpal/flexion/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/TRIlat/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/radiocarpal/flexion/value. bounds: [-1.22173, 1.22173]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/radiocarpal/deviation/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/radiocarpal/deviation/value. bounds: [-0.174533, 0.436332]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/radioulnar/pro_sup/value. bounds: [-1.5708, 1.5708]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/elbow/elbow_flexion/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/APL/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/PL/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/wrist_hand/wrist_hand_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/elbow/elbow_flexion/value. bounds: [0, 2.26893]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/shoulder1/shoulder1_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/shoulder1/shoulder1_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/TMIN/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/shoulder1/shoulder_elv/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/shoulder1/shoulder_elv/value. bounds: [0, 3.14159]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/shoulder0/elv_angle/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/unrothum/unrothum_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/unrothum/unrothum_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/FDSM/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/unrothum/unrothum_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/PQ/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/BICshort/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/unrothum/unrothum_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/CORB/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/unrothum/unrothum_r1/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/TRIlong/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/unrothum/unrothum_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/EDCI/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/DELT3/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/shoulder2/shoulder_rot/value. bounds: [-1.5708, 2.0944]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/EDM/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/FDPI/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r1/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/unrotscap/unrotscap_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.590] [cout] [info]   /forceset/BIClong/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.590] [cout] [info]   /jointset/wrist_hand/wrist_hand_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/shoulder0/elv_angle/value. bounds: [-1.65806, 2.26893]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/unrotscap/unrotscap_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/unrotscap/unrotscap_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FDPR/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/shoulder2/shoulder_rot/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/LAT1/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/groundthorax/t_z/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/groundthorax/t_z/value. bounds: [-100, 100]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FPL/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/EDCR/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/unrotscap/unrotscap_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/groundthorax/t_y/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/groundthorax/t_y/value. bounds: [-100, 100]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/groundthorax/t_x/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FDPM/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/wrist_hand/wrist_hand_r1/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/groundthorax/t_x/value. bounds: [-100, 100]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/groundthorax/r_z/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/ECRL/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/groundthorax/r_y/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/groundthorax/r_z/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/groundthorax/r_y/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/EPL/activation. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/radioulnar/pro_sup/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/groundthorax/r_x/speed. bounds: [-50, 50]
+[2024-05-09 17:33:13.591] [cout] [info]   /jointset/groundthorax/r_x/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 17:33:13.591] [cout] [info] Controls: (total: 50)
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FPL. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/EPL. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/EDCI. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FDPI. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FDPM. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FDPL. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FDSI. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FDPR. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/PT. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FCU. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/EDCL. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FCR. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/ECRB. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FDSL. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/BRD. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/EPB. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/BRA. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/APL. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/BICshort. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/BIClong. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FDSM. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/ANC. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/TRIlat. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/CORB. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/LAT3. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/EDM. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/LAT1. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/PECM3. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/PECM2. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/EDCM. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/PECM1. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/EIP. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/EDCR. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/TRImed. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/TMAJ. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/PQ. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/ECRL. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/TRIlong. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/TMIN. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/PL. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/SUBSC. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/INFSP. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/FDSR. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/LAT2. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/SUPSP. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/DELT3. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/ECU. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/DELT2. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/SUP. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info]   /forceset/DELT1. bounds: [0.01, 1]
+[2024-05-09 17:33:13.591] [cout] [info] Parameters: none
+[2024-05-09 17:33:18.241] [info] Number of threads: 32
+[2024-05-09 17:34:04.254] [info] Set log level to Info.
+[2024-05-09 17:34:04.259] [info] ------------------------------------------------------------------------
+[2024-05-09 17:34:04.259] [info] Elapsed real time: 51 second(s).
+[2024-05-09 17:34:04.259] [info] Thu May  9 17:34:04 2024
+[2024-05-09 17:34:04.259] [warning] MocoCasADiSolver did NOT succeed:
+[2024-05-09 17:34:04.259] [warning]   Invalid_Number_Detected
+[2024-05-09 17:34:04.259] [info] ========================================================================
+[2024-05-09 17:34:27.172] [info] Loaded model model from file model.osim
+[2024-05-09 17:34:36.429] [info] Loaded model model from file model.osim
+[2024-05-09 17:34:45.323] [info] ========================================================================
+[2024-05-09 17:34:45.323] [info] MocoCasADiSolver starting.
+[2024-05-09 17:34:45.323] [info] Thu May  9 17:34:45 2024
+[2024-05-09 17:34:45.323] [info] ------------------------------------------------------------------------
+[2024-05-09 17:34:45.323] [cout] [info] Costs: (total: 2)
+[2024-05-09 17:34:45.323] [cout] [info]   marker_tracking. MocoMarkerTrackingGoal, enabled: true, mode: cost, weight: 10.0
+[2024-05-09 17:34:45.323] [cout] [info]         allow unused references: 
+[2024-05-09 17:34:45.323] [cout] [info]         tracked marker(s):
+[2024-05-09 17:34:45.323] [cout] [info]             C7, weight: 20.0
+[2024-05-09 17:34:45.323] [cout] [info]             CLAV, weight: 20.0
+[2024-05-09 17:34:45.323] [cout] [info]             RELB, weight: 10.0
+[2024-05-09 17:34:45.323] [cout] [info]             RFIN, weight: 2.0
+[2024-05-09 17:34:45.323] [cout] [info]             RFRM, weight: 2.0
+[2024-05-09 17:34:45.323] [cout] [info]             RSHO, weight: 10.0
+[2024-05-09 17:34:45.323] [cout] [info]             RUPA, weight: 5.0
+[2024-05-09 17:34:45.323] [cout] [info]             RWRA, weight: 10.0
+[2024-05-09 17:34:45.323] [cout] [info]             RWRB, weight: 10.0
+[2024-05-09 17:34:45.323] [cout] [info]   control_effort. MocoControlGoal, enabled: true, mode: cost, weight: 0.01
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/DELT1, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/DELT2, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/DELT3, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/SUPSP, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/INFSP, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/SUBSC, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/TMIN, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/TMAJ, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/PECM1, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/PECM2, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/PECM3, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/LAT1, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/LAT2, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/LAT3, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/CORB, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/TRIlong, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/TRIlat, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/TRImed, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/ANC, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/SUP, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/BIClong, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/BICshort, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/BRA, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/BRD, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/ECRL, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/ECRB, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/ECU, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/FCR, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/FCU, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/PL, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/PT, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/PQ, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/FDSL, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/FDSR, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/FDSM, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/FDSI, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/FDPL, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/FDPR, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/FDPM, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/FDPI, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/EDCL, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/EDCR, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/EDCM, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/EDCI, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/EDM, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/EIP, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/EPL, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/EPB, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/FPL, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info]         control: /forceset/APL, weight: 1.0
+[2024-05-09 17:34:45.323] [cout] [info] Endpoint constraints: (total: 1)
+[2024-05-09 17:34:45.323] [cout] [info]   initial_activation. MocoInitialActivationGoal, enabled: true, mode: endpoint_constraint
+[2024-05-09 17:34:45.323] [cout] [info] Kinematic constraints: (total: 13)
+[2024-05-09 17:34:45.325] [cout] [info]   kinematic_constraint_cid26. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:34:45.325] [cout] [info]   kinematic_constraint_cid27. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:34:45.325] [cout] [info]   kinematic_constraint_cid28. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:34:45.325] [cout] [info]   kinematic_constraint_cid29. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:34:45.325] [cout] [info]   kinematic_constraint_cid30. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:34:45.325] [cout] [info]   kinematic_constraint_cid31. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:34:45.325] [cout] [info]   kinematic_constraint_cid32. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:34:45.325] [cout] [info]   kinematic_constraint_cid33. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:34:45.325] [cout] [info]   kinematic_constraint_cid34. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:34:45.325] [cout] [info]   kinematic_constraint_cid35. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:34:45.325] [cout] [info]   kinematic_constraint_cid36. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:34:45.325] [cout] [info]   kinematic_constraint_cid37. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:34:45.325] [cout] [info]   kinematic_constraint_cid38. MocoConstraintInfo. number of scalar equations: 3. bounds: 0, 0, 0
+[2024-05-09 17:34:45.325] [cout] [info] Path constraints: none
+[2024-05-09 17:34:45.325] [cout] [info] States: (total: 102)
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/EIP/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/EDCM/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/FDPL/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/FDSR/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/FDSL/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/PT/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/FCU/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/EDCL/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/ECRB/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/BRD/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/BRA/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/SUP/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/FDSI/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/ANC/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/TRImed/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/LAT3/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/LAT2/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/FCR/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/PECM3/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/PECM2/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/PECM1/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/TMAJ/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/SUBSC/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/INFSP/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/SUPSP/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/DELT2/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/DELT1/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/EPB/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/ECU/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/wrist_hand/wrist_hand_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/radiocarpal/flexion/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/TRIlat/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/radiocarpal/flexion/value. bounds: [-1.22173, 1.22173]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/radiocarpal/deviation/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/radiocarpal/deviation/value. bounds: [-0.174533, 0.436332]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/radioulnar/pro_sup/value. bounds: [-1.5708, 1.5708]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/elbow/elbow_flexion/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/APL/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/PL/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/wrist_hand/wrist_hand_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/elbow/elbow_flexion/value. bounds: [0, 2.26893]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/shoulder1/shoulder1_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/shoulder1/shoulder1_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/TMIN/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/shoulder1/shoulder_elv/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/shoulder1/shoulder_elv/value. bounds: [0, 3.14159]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/shoulder0/elv_angle/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/unrothum/unrothum_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/unrothum/unrothum_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/FDSM/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/unrothum/unrothum_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/PQ/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/BICshort/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/unrothum/unrothum_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/CORB/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/unrothum/unrothum_r1/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/TRIlong/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/unrothum/unrothum_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/EDCI/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/DELT3/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/shoulder2/shoulder_rot/value. bounds: [-1.5708, 2.0944]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/EDM/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/FDPI/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r1/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /jointset/unrotscap/unrotscap_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.325] [cout] [info]   /forceset/BIClong/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/wrist_hand/wrist_hand_r1/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/shoulder0/elv_angle/value. bounds: [-1.65806, 2.26893]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/unrotscap/unrotscap_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/unrotscap/unrotscap_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r3/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FDPR/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r3/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/shoulder2/shoulder_rot/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r2/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/sternoclavicular/sternoclavicular_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/LAT1/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/groundthorax/t_z/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/groundthorax/t_z/value. bounds: [-100, 100]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FPL/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/EDCR/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/unrotscap/unrotscap_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/groundthorax/t_y/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/acromioclavicular/acromioclavicular_r2/value. bounds: [-99999.9, 99999.9]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/groundthorax/t_y/value. bounds: [-100, 100]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/groundthorax/t_x/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FDPM/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/wrist_hand/wrist_hand_r1/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/groundthorax/t_x/value. bounds: [-100, 100]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/groundthorax/r_z/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/ECRL/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/groundthorax/r_y/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/groundthorax/r_z/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/groundthorax/r_y/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/EPL/activation. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/radioulnar/pro_sup/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/groundthorax/r_x/speed. bounds: [-50, 50]
+[2024-05-09 17:34:45.326] [cout] [info]   /jointset/groundthorax/r_x/value. bounds: [-6.28319, 6.28319]
+[2024-05-09 17:34:45.326] [cout] [info] Controls: (total: 50)
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FPL. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/EPL. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/EDCI. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FDPI. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FDPM. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FDPL. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FDSI. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FDPR. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/PT. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FCU. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/EDCL. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FCR. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/ECRB. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FDSL. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/BRD. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/EPB. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/BRA. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/APL. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/BICshort. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/BIClong. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FDSM. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/ANC. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/TRIlat. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/CORB. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/LAT3. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/EDM. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/LAT1. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/PECM3. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/PECM2. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/EDCM. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/PECM1. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/EIP. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/EDCR. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/TRImed. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/TMAJ. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/PQ. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/ECRL. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/TRIlong. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/TMIN. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/PL. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/SUBSC. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/INFSP. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/FDSR. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/LAT2. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/SUPSP. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/DELT3. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/ECU. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/DELT2. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/SUP. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info]   /forceset/DELT1. bounds: [0.01, 1]
+[2024-05-09 17:34:45.326] [cout] [info] Parameters: none
+[2024-05-09 17:34:50.772] [info] Number of threads: 32
+[2024-05-09 17:35:40.391] [info] Set log level to Info.
+[2024-05-09 17:35:40.399] [info] ------------------------------------------------------------------------
+[2024-05-09 17:35:40.399] [info] Elapsed real time: 55 second(s).
+[2024-05-09 17:35:40.399] [info] Thu May  9 17:35:40 2024
+[2024-05-09 17:35:40.399] [warning] MocoCasADiSolver did NOT succeed:
+[2024-05-09 17:35:40.399] [warning]   Invalid_Number_Detected
+[2024-05-09 17:35:40.399] [info] ========================================================================
